@@ -5,24 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      background-color: hsl(212, 45%, 89%);
+      /* text-align: center; */
+      height: 100vh;
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      color: hsl(218, 44%, 22%);
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; 
+      margin: auto;
+      /* top: 50%; */
+      /* transform: translateY(-50%); */
+      width: 300px;
+      height: 475px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 15px;
+      width: 100%;
+    }
+
+    p {
+      margin: 0 20px;
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
+  <div class="card">
+    <img src="images/image-qr-code.png" alt="QR Code">
+    <h2>Improve your front-end skills by building projects</h2>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  </div>
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">madshat</a>.
   </div>
 </body>
 </html>
